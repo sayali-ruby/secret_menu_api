@@ -1,5 +1,4 @@
-class SecretMenuItemsController < ApplicationController
-    
+class Api::V1::SecretMenuItemsController < ApplicationController
     def index
         @secretMenuItems = SecretMenuItem.all 
         render json: @secretMenuItems
